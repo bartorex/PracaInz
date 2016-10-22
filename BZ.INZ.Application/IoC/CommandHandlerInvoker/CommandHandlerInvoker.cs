@@ -10,17 +10,17 @@ namespace BZ.INZ.Application.IoC.CommandHandlerInvoker {
             this.context = context;
         }
 
-        public async Task<ICommandResult> Invoke(ICommand command) {
+        public async Task<CommandResult> Invoke(ICommand command) {
             var handler = context.ResolveKeyed(command.GetType(), typeof(ICommandHandler));
             return await Invoke(command, handler);
         }
 
-        private async Task<ICommandResult> Invoke(ICommand command, object handler) {
-            var handle = handler.GetType().GetMethod("HandleAsync", new[] { command.GetType() });
+        private async Task<CommandResult> Invoke(ICommand command, object handler) {
+            var handle = handler.GetType().GetMethod("Handle", new[] { command.GetType() });
             var result = handle.Invoke(handler, new[] { command });
 
             await ((Task)result);
-            var value = result.GetType().GetProperty("Result").GetValue(result) as ICommandResult;
+            var value = result.GetType().GetProperty("Result").GetValue(result) as CommandResult;
             return value;
         }
     }

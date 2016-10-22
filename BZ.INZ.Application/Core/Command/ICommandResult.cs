@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BZ.INZ.Application.Core.Command {
+﻿namespace BZ.INZ.Application.Core.Command {
     public interface ICommandResult {
-        
+
+    };
+
+    public interface ICommandResult<T> : ICommandResult {
+        T Value { get; set; }
     }
 }

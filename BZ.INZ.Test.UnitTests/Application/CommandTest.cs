@@ -18,7 +18,7 @@ namespace BZ.INZ.Test.UnitTests.Application {
         }
 
         [TestCleanup]
-        public static void TearDown() {
+        public void TearDown() {
             container.Dispose();
         }
 
@@ -26,8 +26,10 @@ namespace BZ.INZ.Test.UnitTests.Application {
         public async Task SampleCommandTest() {
             var invoker = container.Resolve<ICommandHandlerInvoker>();
             var result = await invoker.Invoke(new SampleCommand {
-                Value = "sdas"
+                Value = "Test"
             });
-        };
+
+            Assert.IsNotNull(result);
+        }
     }
 }

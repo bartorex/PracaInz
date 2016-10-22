@@ -46,13 +46,14 @@
   <ItemGroup>
     <Compile Include="CommandHandler\SampleCommandHandler.cs" />
     <Compile Include="Command\SampleCommand\SampleCommand.cs" />
-    <Compile Include="Command\SampleCommand\SampleCommandResult.cs" />
+    <Compile Include="Core\Command\CommandResult.cs" />
     <Compile Include="Core\Command\ICommand.cs" />
     <Compile Include="Core\Command\ICommandHandler.cs" />
     <Compile Include="Core\Command\ICommandResult.cs" />
     <Compile Include="Core\Query\IQueryHandler.cs" />
     <Compile Include="IoC\CommandHandlerInvoker\CommandHandlerInvoker.cs" />
     <Compile Include="IoC\CommandHandlerInvoker\ICommandHandlerInvoker.cs" />
+    <Compile Include="IoC\Extension\TypeExtenstions.cs" />
     <Compile Include="IoC\Module.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

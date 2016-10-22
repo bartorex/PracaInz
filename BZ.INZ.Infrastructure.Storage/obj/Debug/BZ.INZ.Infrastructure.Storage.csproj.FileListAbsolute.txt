@@ -1,0 +1,10 @@
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\bin\Debug\BZ.INZ.Infrastructure.Storage.dll.config
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\bin\Debug\BZ.INZ.Infrastructure.Storage.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\bin\Debug\BZ.INZ.Infrastructure.Storage.pdb
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\bin\Debug\EntityFramework.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\bin\Debug\EntityFramework.xml
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\obj\Debug\BZ.INZ.Infrastructure.Storage.csprojResolveAssemblyReference.cache
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\obj\Debug\BZ.INZ.Infrastructure.Storage.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\obj\Debug\BZ.INZ.Infrastructure.Storage.pdb
