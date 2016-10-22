@@ -67,6 +67,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Application\CommandTest.cs" />
+    <Compile Include="Application\QueryTest.cs" />
     <Compile Include="Integration\DocuSign.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

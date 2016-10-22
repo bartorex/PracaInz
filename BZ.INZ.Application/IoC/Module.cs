@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using Autofac.Core;
 using BZ.INZ.Application.Core.Command;
+using BZ.INZ.Application.Core.Query;
 using BZ.INZ.Application.IoC.Extension;
 using System.Linq;
 
@@ -20,7 +21,11 @@ namespace BZ.INZ.Application.IoC {
 
             builder.RegisterTypes(ThisAssembly.GetTypes())
                 .Where(t => t.ImplementInterface(typeof(ICommand)))
-                .As(t => new KeyedService(t.Name, typeof(ICommand)));                
+                .As(t => new KeyedService(t.Name, typeof(ICommand)));
+
+            builder.RegisterTypes(ThisAssembly.GetTypes())
+                .Where(t => t.ImplementGenericInterface(
+                    type => type == typeof(IQueryHandlerAsync<,>))).AsImplementedInterfaces(); 
         }
     }
 }

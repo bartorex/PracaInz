@@ -7,6 +7,6 @@ namespace BZ.INZ.Application.Core.Query {
     }
 
     public interface IQueryHandlerAsync<TRequest, TResponse> {
-        Task<IQueryable<TResponse>> Query(TRequest request);
+        Task<IQueryable<TResponse>> QueryAsync(TRequest request);
     }
 }
