@@ -8,16 +8,13 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.Http;
 
-namespace BZ.INZ.Infrastructure.WebApi
-{
-    public class Global : HttpApplication
-    {
-        void Application_Start(object sender, EventArgs e)
-        {
+namespace BZ.INZ.Infrastructure.WebApi {
+    public class Global : HttpApplication {
+        void Application_Start(object sender, EventArgs e) {
             // Code that runs on application startup
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);            
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
     }
 }
