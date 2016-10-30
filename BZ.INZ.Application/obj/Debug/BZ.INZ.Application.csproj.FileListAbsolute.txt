@@ -5,3 +5,7 @@ C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Appl
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\obj\Debug\BZ.INZ.Application.csprojResolveAssemblyReference.cache
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\obj\Debug\BZ.INZ.Application.dll
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\obj\Debug\BZ.INZ.Application.pdb
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\BZ.INZ.Application.dll.config
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\Autofac.Extras.NLog.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\NLog.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\NLog.xml

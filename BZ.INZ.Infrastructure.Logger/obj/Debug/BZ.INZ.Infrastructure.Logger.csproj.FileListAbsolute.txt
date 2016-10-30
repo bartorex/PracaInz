@@ -1,0 +1,15 @@
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Logger\bin\Debug\BZ.INZ.Infrastructure.Logger.dll.config
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Logger\bin\Debug\BZ.INZ.Infrastructure.Logger.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Logger\bin\Debug\BZ.INZ.Infrastructure.Logger.pdb
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Logger\bin\Debug\Autofac.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Logger\bin\Debug\Autofac.Extras.NLog.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Logger\bin\Debug\Castle.Core.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Logger\bin\Debug\Newtonsoft.Json.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Logger\bin\Debug\NLog.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Logger\bin\Debug\Autofac.xml
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Logger\bin\Debug\Castle.Core.xml
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Logger\bin\Debug\Newtonsoft.Json.xml
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Logger\bin\Debug\NLog.xml
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Logger\obj\Debug\BZ.INZ.Infrastructure.Logger.csprojResolveAssemblyReference.cache
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Logger\obj\Debug\BZ.INZ.Infrastructure.Logger.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Logger\obj\Debug\BZ.INZ.Infrastructure.Logger.pdb

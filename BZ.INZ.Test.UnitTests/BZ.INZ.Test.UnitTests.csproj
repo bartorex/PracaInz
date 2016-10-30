@@ -39,12 +39,28 @@
       <HintPath>..\packages\Autofac.4.1.1\lib\net45\Autofac.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Autofac.Extras.NLog, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.Extras.NLog.1.3.0\lib\net451\Autofac.Extras.NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="DocuSign.eSign, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7fca6fcbbc219ede, processorArchitecture=MSIL">
       <HintPath>..\packages\DocuSign.eSign.dll.2.0.6\lib\net45\DocuSign.eSign.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.3.10\lib\net45\NLog.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="RestSharp, Version=100.0.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
@@ -52,6 +68,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -68,6 +85,8 @@
   <ItemGroup>
     <Compile Include="Application\CommandTest.cs" />
     <Compile Include="Application\QueryTest.cs" />
+    <Compile Include="Infrastructure\LoggerTest.cs" />
+    <Compile Include="Infrastructure\StorageTest.cs" />
     <Compile Include="Integration\DocuSign.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -79,6 +98,10 @@
     <ProjectReference Include="..\BZ.INZ.Domain.Model\BZ.INZ.Domain.Model.csproj">
       <Project>{651757d6-adcf-451a-9542-495da11f0402}</Project>
       <Name>BZ.INZ.Domain.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BZ.INZ.Infrastructure.Logger\BZ.INZ.Infrastructure.Logger.csproj">
+      <Project>{d1b19ec7-9546-44b6-9ef4-e8066f6e4018}</Project>
+      <Name>BZ.INZ.Infrastructure.Logger</Name>
     </ProjectReference>
     <ProjectReference Include="..\BZ.INZ.Infrastructure.Storage\BZ.INZ.Infrastructure.Storage.csproj">
       <Project>{7c6d2fd9-72db-45d4-a56b-cf9310d9f50e}</Project>

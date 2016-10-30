@@ -8,3 +8,7 @@ C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infr
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\obj\Debug\BZ.INZ.Infrastructure.Storage.csprojResolveAssemblyReference.cache
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\obj\Debug\BZ.INZ.Infrastructure.Storage.dll
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\obj\Debug\BZ.INZ.Infrastructure.Storage.pdb
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\bin\Debug\Autofac.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\bin\Debug\BZ.INZ.Domain.Model.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\bin\Debug\BZ.INZ.Domain.Model.pdb
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\bin\Debug\Autofac.xml

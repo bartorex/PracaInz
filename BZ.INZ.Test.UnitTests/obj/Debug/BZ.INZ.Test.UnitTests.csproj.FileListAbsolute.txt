@@ -55,3 +55,14 @@ C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\obj\Debug\BZ.INZ.Test.UnitTests.dll
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\obj\Debug\BZ.INZ.Test.UnitTests.pdb
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\EntityFramework.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\EntityFramework.xml
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\BZ.INZ.Infrastructure.Logger.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\Castle.Core.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\Autofac.Extras.NLog.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\BZ.INZ.Infrastructure.Logger.pdb
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\Castle.Core.xml
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\NLog.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\NLog.xml
