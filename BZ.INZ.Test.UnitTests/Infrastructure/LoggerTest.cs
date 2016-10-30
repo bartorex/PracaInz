@@ -25,11 +25,7 @@ namespace BZ.INZ.Test.UnitTests.Infrastructure {
 
         [TestMethod]
         public void ObfuscationJsonConverterTest() {
-            var strategiest = new Dictionary<string, IObfuscationStrategy> {
-                { "FirstName", container.ResolveKeyed<IObfuscationStrategy>(typeof(DefaultObfuscationStrategy)) }
-            };
-
-            var obfuscationConverter = new ObfuscationJsonConverter(strategiest);
+            var obfuscationConverter = container.Resolve<ObfuscationJsonConverter>();
             var dataToConvert = new SampleCommandModel { FirstName = "LastName", LastName = "TestName" };
             var convertedObject = JsonConvert.SerializeObject(dataToConvert, Formatting.Indented, obfuscationConverter);
             Assert.IsNotNull(convertedObject);

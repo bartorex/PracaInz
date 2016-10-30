@@ -7,21 +7,26 @@ using System.Linq;
 
 namespace BZ.INZ.Infrastructure.Logger.Strategies {
     public class ObfuscationJsonConverter : JsonConverter {
-        private readonly IDictionary<string, IObfuscationStrategy> propToObfuscation;
+        private readonly IDictionary<Type, IDictionary<string, IObfuscationStrategy>> typeToObfuscation;
 
-        public ObfuscationJsonConverter(IDictionary<string, IObfuscationStrategy> propToObfuscation) {
-            this.propToObfuscation = propToObfuscation;
+        public ObfuscationJsonConverter(IDictionary<Type, IDictionary<string, IObfuscationStrategy>> typeToObfuscation) {
+            this.typeToObfuscation = typeToObfuscation;
         }
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer) {
             var token = JToken.FromObject(value);
             var o = new JObject(new JProperty("Log", token));
-            foreach (var node in o.Descendants().Where(
-                t => t.Type == JTokenType.Property &&
-                propToObfuscation.ContainsKey(((JProperty)t).Name))) {
-                var tokenValue = ((JProperty)node).Value.ToString();
-                var strategy = propToObfuscation[((JProperty)node).Name];
-                ((JProperty)node).Value = strategy.Obfuscate(tokenValue);
+
+            if (typeToObfuscation.ContainsKey(value.GetType())) {
+                var propToObfuscation = typeToObfuscation[value.GetType()];
+                foreach (var node in o.Descendants().Where(
+                    t => t.Type == JTokenType.Property &&
+                    propToObfuscation.ContainsKey(((JProperty)t).Name))) {
+
+                    var tokenValue = ((JProperty)node).Value.ToString();
+                    var strategy = propToObfuscation[((JProperty)node).Name];
+                    ((JProperty)node).Value = strategy.Obfuscate(tokenValue);
+                }
             }
             o.WriteTo(writer);
         }

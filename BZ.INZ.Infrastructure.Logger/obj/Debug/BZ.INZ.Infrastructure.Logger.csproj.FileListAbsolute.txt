@@ -13,3 +13,5 @@ C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infr
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Logger\obj\Debug\BZ.INZ.Infrastructure.Logger.csprojResolveAssemblyReference.cache
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Logger\obj\Debug\BZ.INZ.Infrastructure.Logger.dll
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Logger\obj\Debug\BZ.INZ.Infrastructure.Logger.pdb
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Logger\bin\Debug\BZ.INZ.Domain.Model.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Logger\bin\Debug\BZ.INZ.Domain.Model.pdb
