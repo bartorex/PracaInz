@@ -12,8 +12,8 @@ namespace BZ.INZ.Infrastructure.Logger.IoC {
             builder.RegisterType<DefaultObfuscationStrategy>()
                 .Keyed<IObfuscationStrategy>(typeof(DefaultObfuscationStrategy));
 
-            builder.RegisterType<ExceptThreLastCharactersObfuscationStrategy>()
-                .Keyed<IObfuscationStrategy>(typeof(ExceptThreLastCharactersObfuscationStrategy));
+            builder.RegisterType<ExceptThreeLastCharactersObfuscationStrategy>()
+                .Keyed<IObfuscationStrategy>(typeof(ExceptThreeLastCharactersObfuscationStrategy));
 
             builder.RegisterType<ObfuscationJsonConverter>().AsSelf();
 

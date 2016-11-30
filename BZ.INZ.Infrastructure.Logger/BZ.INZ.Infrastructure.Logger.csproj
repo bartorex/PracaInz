@@ -65,7 +65,7 @@
     <Compile Include="LogObfuscator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strategies\DefaultObfuscationStrategy.cs" />
-    <Compile Include="Strategies\ExceptThreLastCharactersObfuscationStrategy.cs" />
+    <Compile Include="Strategies\ExceptThreeLastCharactersObfuscationStrategy.cs" />
     <Compile Include="Strategies\IObfuscationStrategy.cs" />
     <Compile Include="ObfuscationJsonConverter.cs" />
   </ItemGroup>

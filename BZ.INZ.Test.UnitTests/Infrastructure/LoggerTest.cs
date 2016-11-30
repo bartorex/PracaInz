@@ -1,7 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Autofac;
 using Module = BZ.INZ.Infrastructure.Logger.IoC.Module;
-using System.Collections.Generic;
 using BZ.INZ.Infrastructure.Logger.Strategies;
 using BZ.INZ.Domain.Model.Command;
 using Newtonsoft.Json;

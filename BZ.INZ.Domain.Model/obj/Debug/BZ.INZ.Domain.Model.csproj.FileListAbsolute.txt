@@ -10,3 +10,6 @@ C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Doma
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Domain.Model\bin\Debug\Microsoft.Owin.xml
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Domain.Model\bin\Debug\Microsoft.Owin.Security.xml
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Domain.Model\bin\Debug\Newtonsoft.Json.xml
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Domain.Model\bin\Debug\BZ.INZ.Domain.Model.dll.config
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Domain.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Domain.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml

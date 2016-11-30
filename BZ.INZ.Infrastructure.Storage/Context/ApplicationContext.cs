@@ -5,6 +5,7 @@ using Model = BZ.INZ.Domain.Model;
 namespace BZ.INZ.Infrastructure.Storage.Context {
     public class ApplicationContext : DbContext {
         public DbSet<Model.Query.Detail.JobOffer> JobOffers { get; set; }
+        public DbSet<Model.Query.Detail.Employer> Employers { get; set; }
 
         public ApplicationContext() : base("ApplicationStorage") { }
 

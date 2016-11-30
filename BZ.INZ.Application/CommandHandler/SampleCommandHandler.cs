@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using BZ.INZ.Application.Command.SampleCommand;
 using BZ.INZ.Application.Core.Command;
 

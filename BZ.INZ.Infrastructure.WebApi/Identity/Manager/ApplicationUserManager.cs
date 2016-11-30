@@ -1,14 +1,13 @@
-﻿//using BZ.INZ.Infrastructure.WebApi.Identity.Model;
-//using Microsoft.AspNet.Identity;
-//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Web;
+﻿using BZ.INZ.Infrastructure.WebApi.Identity.Context;
+using BZ.INZ.Infrastructure.WebApi.Identity.Model;
+using Microsoft.AspNet.Identity;
+using Microsoft.Owin.Security.DataProtection;
 
-//namespace BZ.INZ.Infrastructure.WebApi.Identity.Manager {
-//    public class ApplicationUserManager : UserManager<ApplicationUser> {
-//        public ApplicationUserManager() {
-
-//        }
-//    }
-//}
+namespace BZ.INZ.Infrastructure.WebApi.Identity.Manager {
+    public class ApplicationUserManager : UserManager<ApplicationUser> {
+        private readonly ApplicationDbContext context;
+        public ApplicationUserManager(ApplicationUserStore userStore, IDataProtectionProvider dataProvider, ApplicationDbContext context) : base(userStore){
+            this.context = context;
+        }
+    }
+}

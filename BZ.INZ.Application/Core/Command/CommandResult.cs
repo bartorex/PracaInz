@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace BZ.INZ.Application.Core.Command {
+﻿namespace BZ.INZ.Application.Core.Command {
     public class CommandResult : ICommandResult {
     }
 

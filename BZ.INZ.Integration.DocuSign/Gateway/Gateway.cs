@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using BZ.INZ.Integration.Core.Gateway;
 using BZ.INZ.Integration.DocuSign.Gateway.Request;
 using BZ.INZ.Integration.DocuSign.Gateway.Response;

@@ -52,7 +52,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandHandler\CreateJobOfferCommandHandler.cs" />
     <Compile Include="CommandHandler\SampleCommandHandler.cs" />
+    <Compile Include="Command\SampleCommand\CreateJobOfferCommand.cs" />
     <Compile Include="Command\SampleCommand\SampleCommand.cs" />
     <Compile Include="Core\Command\CommandResult.cs" />
     <Compile Include="Core\Command\ICommand.cs" />
@@ -70,7 +72,16 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BZ.INZ.Domain.Model\BZ.INZ.Domain.Model.csproj">
+      <Project>{651757D6-ADCF-451A-9542-495DA11F0402}</Project>
+      <Name>BZ.INZ.Domain.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BZ.INZ.Infrastructure.Storage\BZ.INZ.Infrastructure.Storage.csproj">
+      <Project>{7C6D2FD9-72DB-45D4-A56B-CF9310D9F50E}</Project>
+      <Name>BZ.INZ.Infrastructure.Storage</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
