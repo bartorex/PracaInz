@@ -6,5 +6,6 @@ namespace BZ.INZ.Domain.Model.Query.Detail {
         public Guid EmployerId { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
+        public DateTime DateRequested { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using BZ.INZ.Domain.Model.Command;
+using BZ.INZ.Domain.Model.Query.Detail;
 using BZ.INZ.Infrastructure.Logger.Strategies;
 using System;
 using System.Collections.Generic;
@@ -26,8 +27,13 @@ namespace BZ.INZ.Infrastructure.Logger.IoC {
                     { "FirstName", ctx.ResolveKeyed<IObfuscationStrategy>(typeof(DefaultObfuscationStrategy)) }
                 };
 
+                var employerObfuscation = new Dictionary<string, IObfuscationStrategy>{
+                    {"Pesel",  ctx.ResolveKeyed<IObfuscationStrategy>(typeof(ExceptThreeLastCharactersObfuscationStrategy)) }
+                };
+
                 return new Dictionary<Type, IDictionary<string, IObfuscationStrategy>> {
-                    {typeof(SampleCommandModel), sampleCommandObfProp }
+                    {typeof(SampleCommandModel), sampleCommandObfProp },
+                    {typeof(Employer),employerObfuscation }
                 };
             });
         }

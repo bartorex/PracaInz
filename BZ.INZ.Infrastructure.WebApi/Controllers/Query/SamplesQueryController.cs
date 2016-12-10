@@ -15,7 +15,7 @@ namespace BZ.INZ.Infrastructure.WebApi.Controllers.Query {
         [HttpGet]
         [Route("getTest/{}")]
         private Task<IEnumerable<string>> GetTest(string test) {
-
+            return null;
         }
     }
 }

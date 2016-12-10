@@ -2,6 +2,7 @@
 using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
+using System;
 
 namespace BZ.INZ.Infrastructure.Storage.UnitOfWork {
     public class UnitOfWork : IUnitOfWork {
@@ -21,7 +22,7 @@ namespace BZ.INZ.Infrastructure.Storage.UnitOfWork {
             });
         }
 
-        public async Task<IQueryable> Query<T>() where T : class {
+        public async Task<IQueryable<T>> Query<T>() where T : class {
             return await Task.FromResult(context.Set<T>());
         }
 
