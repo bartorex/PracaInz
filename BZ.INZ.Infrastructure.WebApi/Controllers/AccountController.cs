@@ -4,7 +4,6 @@ using BZ.INZ.Infrastructure.WebApi.ViewModel;
 using Microsoft.AspNet.Identity;
 using System.Threading.Tasks;
 using System.Web.Http;
-using System.Web.Http.ModelBinding;
 
 namespace BZ.INZ.Infrastructure.WebApi.Controllers {
     [RoutePrefix("account")]
@@ -43,7 +42,6 @@ namespace BZ.INZ.Infrastructure.WebApi.Controllers {
                 }
                 return BadRequest(ModelState);
             }
-
 
             return BadRequest();
         }

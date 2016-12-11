@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Autofac.Extras.NLog;
 using BZ.INZ.Infrastructure.Storage.UnitOfWork;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;

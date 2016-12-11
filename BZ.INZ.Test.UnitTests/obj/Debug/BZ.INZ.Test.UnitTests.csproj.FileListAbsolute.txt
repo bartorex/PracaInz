@@ -83,3 +83,5 @@ C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\System.Web.Http.Owin.xml
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\Autofac.Integration.WebApi.Owin.dll
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\Autofac.Integration.WebApi.Owin.xml
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\Autofac.Extras.DynamicProxy.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\Autofac.Extras.DynamicProxy.xml

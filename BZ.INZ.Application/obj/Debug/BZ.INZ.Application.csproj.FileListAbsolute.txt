@@ -15,3 +15,11 @@ C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Appl
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\BZ.INZ.Domain.Model.pdb
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\BZ.INZ.Infrastructure.Storage.pdb
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\EntityFramework.xml
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\Autofac.Extras.DynamicProxy.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\BZ.INZ.Infrastructure.Logger.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\Castle.Core.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\Newtonsoft.Json.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\BZ.INZ.Infrastructure.Logger.pdb
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\Autofac.Extras.DynamicProxy.xml
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\Castle.Core.xml
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\Newtonsoft.Json.xml

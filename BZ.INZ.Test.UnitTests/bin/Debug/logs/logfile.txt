@@ -1,0 +1,23 @@
+2016-12-10 20:04:08.5346 Autofac.Extras.NLog.SimpleNLogModule+<>c Test
+2016-12-10 20:11:52.8105 BZ.INZ.Infrastructure.Logger.CallLogInterceptor Request
+Target: BZ.INZ.Application.CommandHandler.SampleCommandHandler
+Date + time: 10.12.2016 20:11:52
+Arguments: 
+
+
+2016-12-10 20:45:17.7930 BZ.INZ.Infrastructure.Logger.CallLogInterceptor Request
+Target: BZ.INZ.Application.CommandHandler.SampleCommandHandler
+Date + time: 10.12.2016 20:45:00
+Arguments: 
+{
+  "Log": {
+    "Value": "Test"
+  }
+}
+Result
+Type: {
+  "Log": {
+    "Value": "Test"
+  }
+}
+

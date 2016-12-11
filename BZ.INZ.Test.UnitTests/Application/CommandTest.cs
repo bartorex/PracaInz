@@ -1,9 +1,12 @@
 ﻿using Autofac;
+using Autofac.Extras.NLog;
 using BZ.INZ.Application.Command.SampleCommand;
 using BZ.INZ.Application.IoC.CommandHandlerInvoker;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Threading.Tasks;
 using Module = BZ.INZ.Application.IoC.Module;
+using LogModule = BZ.INZ.Infrastructure.Logger.IoC.Module;
+using System.Threading;
 
 namespace BZ.INZ.Test.UnitTests.Application {
     [TestClass]
@@ -14,6 +17,9 @@ namespace BZ.INZ.Test.UnitTests.Application {
         public static void SetUp(TestContext context) {
             var builder = new ContainerBuilder();
             builder.RegisterModule<Module>();
+            builder.RegisterModule<LogModule>();
+            builder.RegisterModule<NLogModule>();
+            builder.RegisterModule<SimpleNLogModule>();
             container = builder.Build();
         }
 
@@ -28,7 +34,7 @@ namespace BZ.INZ.Test.UnitTests.Application {
             var result = await invoker.Invoke(new SampleCommand {
                 Value = "Test"
             });
-
+            Thread.Sleep(7000);
             Assert.IsNotNull(result);
         }
     }
