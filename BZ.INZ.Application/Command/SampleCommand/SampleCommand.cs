@@ -2,6 +2,6 @@
 
 namespace BZ.INZ.Application.Command.SampleCommand {
     public class SampleCommand : ICommand {
-        public string Value { get; set; }
+        public string FirstName { get; set; }
     }
 }

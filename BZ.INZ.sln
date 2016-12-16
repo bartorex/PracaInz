@@ -53,6 +53,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BZ.INZ.UI.Angular", "UI\BZ.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BZ.INZ.Infrastructure.Logger", "BZ.INZ.Infrastructure.Logger\BZ.INZ.Infrastructure.Logger.csproj", "{D1B19EC7-9546-44B6-9EF4-E8066F6E4018}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BZ.INZ.Integration.SomeExternalSystem", "BZ.INZ.Integration.SomeExternalSystem\BZ.INZ.Integration.SomeExternalSystem.csproj", "{4165B06E-C5DF-4A34-8A3E-7FC39E57F712}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +97,10 @@ Global
 		{D1B19EC7-9546-44B6-9EF4-E8066F6E4018}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1B19EC7-9546-44B6-9EF4-E8066F6E4018}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1B19EC7-9546-44B6-9EF4-E8066F6E4018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4165B06E-C5DF-4A34-8A3E-7FC39E57F712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4165B06E-C5DF-4A34-8A3E-7FC39E57F712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4165B06E-C5DF-4A34-8A3E-7FC39E57F712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4165B06E-C5DF-4A34-8A3E-7FC39E57F712}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,5 +115,6 @@ Global
 		{629D3F95-3ED2-4A51-8519-339B8029048F} = {32A22C5C-2F77-4674-9453-FA6DF4DFF07D}
 		{EC457D0A-DD70-46D6-9EE6-84FF30B9E10B} = {2D3F536C-E9A3-4564-8EE8-E9BC3487E347}
 		{D1B19EC7-9546-44B6-9EF4-E8066F6E4018} = {B326C760-6707-46A8-9851-15EB55D92F38}
+		{4165B06E-C5DF-4A34-8A3E-7FC39E57F712} = {E7A85EA8-1BEB-45CD-B197-11C2E9A4DAE2}
 	EndGlobalSection
 EndGlobal

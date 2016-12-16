@@ -32,7 +32,7 @@ namespace BZ.INZ.Test.UnitTests.Application {
         public async Task SampleCommandTest() {
             var invoker = container.Resolve<ICommandHandlerInvoker>();
             var result = await invoker.Invoke(new SampleCommand {
-                Value = "Test"
+                FirstName = "Test"
             });
             Thread.Sleep(7000);
             Assert.IsNotNull(result);

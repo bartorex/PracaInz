@@ -6,7 +6,7 @@ namespace BZ.INZ.Application.CommandHandler {
     public class SampleCommandHandler : ICommandHandler<SampleCommand, string> {
         public async Task<CommandResult<string>> Handle(SampleCommand command) {
             return await Task.Run(() => {
-                return new CommandResult<string> { Value = command.Value }; 
+                return new CommandResult<string> { Value = command.FirstName }; 
             });
         }
     }

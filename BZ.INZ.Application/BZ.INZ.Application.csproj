@@ -74,6 +74,7 @@
     <Compile Include="IoC\Extension\TypeExtenstions.cs" />
     <Compile Include="IoC\Module.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryHandler\ExternalSystemHandler\ExternalSystemQueryHandler.cs" />
     <Compile Include="QueryHandler\JobOfferHandler\Handler.cs" />
     <Compile Include="QueryHandler\JobOfferHandler\Key.cs" />
     <Compile Include="QueryHandler\SampleHandler\SampleHandler.cs" />
@@ -94,6 +95,18 @@
     <ProjectReference Include="..\BZ.INZ.Infrastructure.Storage\BZ.INZ.Infrastructure.Storage.csproj">
       <Project>{7C6D2FD9-72DB-45D4-A56B-CF9310D9F50E}</Project>
       <Name>BZ.INZ.Infrastructure.Storage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BZ.INZ.Integration.Core\BZ.INZ.Integration.Core.csproj">
+      <Project>{5487157e-ef1d-4321-b542-4d5cd194b7c2}</Project>
+      <Name>BZ.INZ.Integration.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BZ.INZ.Integration.DocuSign\BZ.INZ.Integration.DocuSign.csproj">
+      <Project>{ff86dae8-083a-4808-b98d-390cf56a6496}</Project>
+      <Name>BZ.INZ.Integration.DocuSign</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BZ.INZ.Integration.SomeExternalSystem\BZ.INZ.Integration.SomeExternalSystem.csproj">
+      <Project>{4165b06e-c5df-4a34-8a3e-7fc39e57f712}</Project>
+      <Name>BZ.INZ.Integration.SomeExternalSystem</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

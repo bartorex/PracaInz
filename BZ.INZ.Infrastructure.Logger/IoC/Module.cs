@@ -36,6 +36,7 @@ namespace BZ.INZ.Infrastructure.Logger.IoC {
                 return new Dictionary<Type, IDictionary<string, IObfuscationStrategy>> {
                     {typeof(SampleCommandModel), sampleCommandObfProp },
                     {typeof(Employer),employerObfuscation }
+                    //{typeof(SampleCommand), sampleCommandObfProp}
                 };
             });
         }
