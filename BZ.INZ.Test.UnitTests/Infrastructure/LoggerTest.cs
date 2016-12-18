@@ -44,6 +44,16 @@ namespace BZ.INZ.Test.UnitTests.Infrastructure {
         }
 
         [TestMethod]
+        public void DefaultObfuscationStrategyUnitTest() {
+            var testString = "testString";
+            var defaultStrategy = new DefaultObfuscationStrategy();
+            var obfscationResult = defaultStrategy.Obfuscate(testString);
+
+            Assert.IsNotNull(testString);
+            Assert.IsTrue("*****" == obfscationResult);
+        }
+
+        [TestMethod]
         public void SimpleLogTest() {
             var logger = container.Resolve<ILogger>();
             logger.Info("Test");

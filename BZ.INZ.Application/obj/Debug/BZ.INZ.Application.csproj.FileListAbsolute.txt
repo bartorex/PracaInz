@@ -23,3 +23,9 @@ C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Appl
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\Autofac.Extras.DynamicProxy.xml
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\Castle.Core.xml
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\Newtonsoft.Json.xml
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\BZ.INZ.Integration.Core.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\BZ.INZ.Integration.DocuSign.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\BZ.INZ.Integration.SomeExternalSystem.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\BZ.INZ.Integration.Core.pdb
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\BZ.INZ.Integration.DocuSign.pdb
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Application\bin\Debug\BZ.INZ.Integration.SomeExternalSystem.pdb
