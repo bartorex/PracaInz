@@ -1,0 +1,19 @@
+<h2>My JobOffers Detail!</h2>
+<div>
+    <label for="">Job Offers Title</label>
+    <input #jobOffer/>
+    <button (click)="create(jobOffer.value); jobOffer.value=''">
+        Create
+    </button>
+    <ul class="">
+        <li *ngFor="let jobOffer of jobOffers" (click)="onSelect(jobOffer)">
+            <span>{{jobOffer.id}}</span> {{jobOffer.name}}
+        </li>
+    </ul>
+</div>
+<div *ngIf="selectedJobOffer">
+    <h3>
+        Selected Job Offer: {{selectedJobOffer.name}}
+    </h3>
+    <button (click)="onSelect(null)">Clear</button>
+</div>
