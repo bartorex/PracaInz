@@ -27,8 +27,8 @@ export class JobOffersComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        //  this.getJobsOffers();
-        this.getMockedJobOffers();
+        this.getJobsOffers();
+        //  this.getMockedJobOffers();
     }
 
     onSelect(jobOffer: JobOffer): void {
@@ -45,15 +45,15 @@ export class JobOffersComponent implements OnInit {
     }
 
     delete(jobOffer: JobOffer): void {
-        this.jobOfferService.deleteJobOffer(jobOffer.id)
-         .then(() => {
-                this.jobOffers = this.jobOffers.filter(jb => jb !== jobOffer);
-                if (this.selectedJobOffer === jobOffer) {
-                    this.selectedJobOffer = null;
-                }
-            });
+        // this.jobOfferService.deleteJobOffer(jobOffer.id)
+        //     .then(() => {
+        //         this.jobOffers = this.jobOffers.filter(jb => jb !== jobOffer);
+        //         if (this.selectedJobOffer === jobOffer) {
+        //             this.selectedJobOffer = null;
+        //         }
+        //     });
     }
-    
+
     gotoDetails(): void {
         let link = ['/detail', this.selectedJobOffer.id];
         this.router.navigate(link);

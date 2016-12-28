@@ -6,6 +6,7 @@ using BZ.INZ.Application.IoC.Extension;
 using System.Linq;
 using Autofac.Extras.DynamicProxy;
 using BZ.INZ.Infrastructure.Logger;
+using BZ.INZ.Application.Mocks;
 
 namespace BZ.INZ.Application.IoC {
     public class Module : Autofac.Module {
@@ -31,8 +32,10 @@ namespace BZ.INZ.Application.IoC {
                 .Where(t => t.ImplementGenericInterface(
                     type => type == typeof(IQueryHandlerAsync<,>)))
                     .AsImplementedInterfaces();
-                    //.EnableInterfaceInterceptors()
-                    //.InterceptedBy(typeof(CallLogInterceptor));
+            //.EnableInterfaceInterceptors()
+            //.InterceptedBy(typeof(CallLogInterceptor));
+
+            builder.RegisterType<JobOffersMocks>().AsSelf();
         }
     }
 }

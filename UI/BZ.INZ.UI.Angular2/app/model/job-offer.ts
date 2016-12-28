@@ -1,4 +1,7 @@
 export class JobOffer {
-    id:number;
+    id:string;
     name:string;
+    employerId:string;
+    content:string;
+    dateRequested:string
 }

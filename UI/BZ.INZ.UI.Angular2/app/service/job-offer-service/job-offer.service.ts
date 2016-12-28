@@ -5,7 +5,8 @@ import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class JobOfferService {
-    private jobOfferUrl = 'app/jobOffers';
+    // private jobOfferUrl = 'app/jobOffers';
+    private jobOfferUrl = "http://localhost:59920/api/jobOffersQuery"
     private headers: Headers;
 
     constructor(private http: Http) {
@@ -13,14 +14,19 @@ export class JobOfferService {
     }
 
     public getJobOffers(): Promise<JobOffer[]> {
-        return this.http.get(this.jobOfferUrl).toPromise()
-            .then(resp => resp.json().data as JobOffer[])
+        var url = `${this.jobOfferUrl}/getMockedJobOffers`;
+        return this.http.get(url).toPromise()
+            .then(resp => {
+                console.log(resp);
+                console.log(resp.json());
+                return resp.json() as JobOffer[]
+            })
             .catch(this.errorHandler)
     }
 
-    public getJobOffer(id: number): Promise<JobOffer> {
-        return this.getJobOffers().then(jobs => jobs.find(x => x.id == id));
-    }
+    // public getJobOffer(id: number): Promise<JobOffer> {
+    //     return this.getJobOffers().then(jobs => jobs.find(x => x.id == id));
+    // }
 
     public createJobOffer(jobOffer: JobOffer): Promise<JobOffer> {
         return this.http

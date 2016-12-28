@@ -215,6 +215,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CommandController.cs" />
+    <Compile Include="Controllers\Query\JobOffersQueryController.cs" />
     <Compile Include="Controllers\Query\SamplesQueryController.cs" />
     <Compile Include="Controllers\SampleController.cs" />
     <Compile Include="Global.asax.cs">

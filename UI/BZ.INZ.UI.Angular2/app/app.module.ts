@@ -24,7 +24,7 @@ import { JobOfferService } from './service/job-offer-service/job-offer.service';
         FormsModule,
         HttpModule,
         routing,
-        InMemoryWebApiModule.forRoot(InMemoryDataService),
+        // InMemoryWebApiModule.forRoot(InMemoryDataService),
     ],
     declarations: [
         AppComponent,

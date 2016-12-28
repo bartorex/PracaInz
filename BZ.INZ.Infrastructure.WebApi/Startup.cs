@@ -6,6 +6,7 @@ using BZ.INZ.Infrastructure.WebApi.Identity.Context;
 using BZ.INZ.Infrastructure.WebApi.Identity.Manager;
 using BZ.INZ.Infrastructure.WebApi.Identity.Provider;
 using Microsoft.Owin;
+using Microsoft.Owin.Cors;
 using Microsoft.Owin.Security.DataProtection;
 using Microsoft.Owin.Security.OAuth;
 using Newtonsoft.Json.Serialization;
@@ -40,8 +41,8 @@ namespace BZ.INZ.Infrastructure.WebApi {
 
             IContainer container = builder.Build();
             config.DependencyResolver = new AutofacWebApiDependencyResolver(container);
-            //WebApiConfig.Register(config);
 
+            app.UseCors(CorsOptions.AllowAll);
             app.UseAutofacMiddleware(container);
             app.UseAutofacWebApi(config);
             app.UseWebApi(config);

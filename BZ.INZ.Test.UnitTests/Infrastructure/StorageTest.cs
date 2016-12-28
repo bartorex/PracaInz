@@ -31,7 +31,7 @@ namespace BZ.INZ.Test.UnitTests.Infrastructure {
                 Content = "SampleContent",
                 EmployerId = Guid.NewGuid(),
                 Id = Guid.NewGuid(),
-                Title = "SampleTitle"
+                Name = "SampleTitle"
             });
 
             await unitOfWork.SaveChangesAsync();
