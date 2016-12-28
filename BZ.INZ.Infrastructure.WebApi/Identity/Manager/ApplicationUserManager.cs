@@ -6,7 +6,10 @@ using Microsoft.Owin.Security.DataProtection;
 namespace BZ.INZ.Infrastructure.WebApi.Identity.Manager {
     public class ApplicationUserManager : UserManager<ApplicationUser> {
         private readonly ApplicationDbContext context;
-        public ApplicationUserManager(ApplicationUserStore userStore, IDataProtectionProvider dataProvider, ApplicationDbContext context) 
+        public ApplicationUserManager(
+            ApplicationUserStore userStore, 
+            IDataProtectionProvider dataProvider, 
+            ApplicationDbContext context) 
             : base(userStore){
             this.context = context;
         }
