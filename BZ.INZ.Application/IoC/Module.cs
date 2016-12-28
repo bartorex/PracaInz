@@ -16,9 +16,9 @@ namespace BZ.INZ.Application.IoC {
                 .Where(t => t.ImplementGenericInterface(
                     type => type == typeof(ICommandHandler<,>) || type == typeof(ICommandHandler<>)))
                 .As(t => new KeyedService(t.GetInterfaces().Single(i => i.IsGenericType).GetGenericArguments().First(),
-                    typeof(ICommandHandler))).AsImplementedInterfaces()
-                    .EnableInterfaceInterceptors()
-                    .InterceptedBy(typeof(CallLogInterceptor));
+                    typeof(ICommandHandler))).AsImplementedInterfaces();
+                    //.EnableInterfaceInterceptors()
+                    //.InterceptedBy(typeof(CallLogInterceptor));
 
             builder.RegisterType<CommandHandlerInvoker.CommandHandlerInvoker>().AsImplementedInterfaces()
                 .InstancePerLifetimeScope();
@@ -30,9 +30,9 @@ namespace BZ.INZ.Application.IoC {
             builder.RegisterTypes(ThisAssembly.GetTypes())
                 .Where(t => t.ImplementGenericInterface(
                     type => type == typeof(IQueryHandlerAsync<,>)))
-                    .AsImplementedInterfaces()
-                    .EnableInterfaceInterceptors()
-                    .InterceptedBy(typeof(CallLogInterceptor));
+                    .AsImplementedInterfaces();
+                    //.EnableInterfaceInterceptors()
+                    //.InterceptedBy(typeof(CallLogInterceptor));
         }
     }
 }

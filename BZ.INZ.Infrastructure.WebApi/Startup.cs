@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Autofac.Extras.NLog;
 using Autofac.Integration.WebApi;
 using BZ.INZ.Infrastructure.WebApi;
 using BZ.INZ.Infrastructure.WebApi.Identity.Context;
@@ -50,6 +51,9 @@ namespace BZ.INZ.Infrastructure.WebApi {
             builder.RegisterModule<Integration.DocuSign.IoC.Module>();
             builder.RegisterModule<Storage.IoC.Module>();
             builder.RegisterModule<Application.IoC.Module>();
+            //builder.RegisterModule<Logger.IoC.Module>();
+            //builder.RegisterModule<NLogModule>();
+            //builder.RegisterModule<SimpleNLogModule>();
         }
 
         private void RegisterOauthComponents(ContainerBuilder builder) {

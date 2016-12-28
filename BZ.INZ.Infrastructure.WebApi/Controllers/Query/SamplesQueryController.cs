@@ -5,7 +5,7 @@ using System.Web.Http;
 
 namespace BZ.INZ.Infrastructure.WebApi.Controllers.Query {
     [RoutePrefix("samplesQuery")]
-    public class SamplesQueryController {
+    public class SamplesQueryController : ApiController {
         private readonly IQueryHandlerAsync<string, string> testHandler;
        
         public SamplesQueryController(IQueryHandlerAsync<string,string> testHandler) {
@@ -13,9 +13,10 @@ namespace BZ.INZ.Infrastructure.WebApi.Controllers.Query {
         }
 
         [HttpGet]
-        [Route("getTest/{}")]
-        private Task<IEnumerable<string>> GetTest(string test) {
-            return null;
+        [Route("getTest")]
+        public async Task<IEnumerable<string>> GetTest() {
+            var result =  await testHandler.QueryAsync("TEST");
+            return result;
         }
     }
 }

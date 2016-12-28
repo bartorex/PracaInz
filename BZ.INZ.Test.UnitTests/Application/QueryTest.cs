@@ -4,6 +4,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
 using System.Threading.Tasks;
 using Module = BZ.INZ.Application.IoC.Module;
+using LoggerModule = BZ.INZ.Infrastructure.Logger.IoC.Module;
+using Autofac.Extras.NLog;
 
 namespace BZ.INZ.Test.UnitTests.Application {
     [TestClass]
@@ -14,6 +16,9 @@ namespace BZ.INZ.Test.UnitTests.Application {
         public static void SetUp(TestContext context) {
             var builder = new ContainerBuilder();
             builder.RegisterModule<Module>();
+            builder.RegisterModule<LoggerModule>();
+            builder.RegisterModule<NLogModule>();
+            builder.RegisterModule<SimpleNLogModule>();
             container = builder.Build();
         }
         

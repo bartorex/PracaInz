@@ -2577,6 +2577,11 @@
             Various helper methods for accessing state of ASP application.
             </summary>
         </member>
+        <member name="T:System.Runtime.CompilerServices.ExtensionAttribute">
+            <summary>
+            Extension method attribute used when compiling for pre-LINQ platforms.
+            </summary>
+        </member>
         <member name="T:NLog.Internal.CurrentTimeGetter">
             <summary>
             Optimized methods to get current time.
@@ -3351,6 +3356,56 @@
             </summary>
         </member>
         <member name="T:NLog.Internal.MySmtpClient">
+            <summary>
+            Supports mocking of SMTP Client code.
+            </summary>
+        </member>
+        <member name="M:NLog.Internal.MySmtpClient.Dispose">
+            <summary>
+            Sends a QUIT message to the SMTP server, gracefully ends the TCP connection, and releases all resources used by the current instance of the <see cref="T:System.Net.Mail.SmtpClient"/> class.
+            </summary>
+        </member>
+        <member name="M:NLog.Internal.MySmtpClient.NLog#Internal#ISmtpClient#get_Host">
+            <summary>
+            Supports mocking of SMTP Client code.
+            </summary>
+        </member>
+        <member name="M:NLog.Internal.MySmtpClient.NLog#Internal#ISmtpClient#set_Host(System.String)">
+            <summary>
+            Supports mocking of SMTP Client code.
+            </summary>
+        </member>
+        <member name="M:NLog.Internal.MySmtpClient.NLog#Internal#ISmtpClient#get_Port">
+            <summary>
+            Supports mocking of SMTP Client code.
+            </summary>
+        </member>
+        <member name="M:NLog.Internal.MySmtpClient.NLog#Internal#ISmtpClient#set_Port(System.Int32)">
+            <summary>
+            Supports mocking of SMTP Client code.
+            </summary>
+        </member>
+        <member name="M:NLog.Internal.MySmtpClient.NLog#Internal#ISmtpClient#get_Credentials">
+            <summary>
+            Supports mocking of SMTP Client code.
+            </summary>
+        </member>
+        <member name="M:NLog.Internal.MySmtpClient.NLog#Internal#ISmtpClient#set_Credentials(System.Net.ICredentialsByHost)">
+            <summary>
+            Supports mocking of SMTP Client code.
+            </summary>
+        </member>
+        <member name="M:NLog.Internal.MySmtpClient.NLog#Internal#ISmtpClient#get_EnableSsl">
+            <summary>
+            Supports mocking of SMTP Client code.
+            </summary>
+        </member>
+        <member name="M:NLog.Internal.MySmtpClient.NLog#Internal#ISmtpClient#set_EnableSsl(System.Boolean)">
+            <summary>
+            Supports mocking of SMTP Client code.
+            </summary>
+        </member>
+        <member name="M:NLog.Internal.MySmtpClient.NLog#Internal#ISmtpClient#Send(System.Net.Mail.MailMessage)">
             <summary>
             Supports mocking of SMTP Client code.
             </summary>
@@ -9737,45 +9792,6 @@
             </summary>
             <param name="result">The result.</param>
         </member>
-        <member name="T:NLog.LogReceiverService.ILogReceiverServer">
-            <summary>
-            Service contract for Log Receiver server.
-            </summary>
-        </member>
-        <member name="M:NLog.LogReceiverService.ILogReceiverServer.ProcessLogMessages(NLog.LogReceiverService.NLogEvents)">
-            <summary>
-            Processes the log messages.
-            </summary>
-            <param name="events">The events.</param>
-        </member>
-        <member name="T:NLog.LogReceiverService.LogReceiverForwardingService">
-            <summary>
-            Implementation of <see cref="T:NLog.LogReceiverService.ILogReceiverServer"/> which forwards received logs through <see cref="T:NLog.LogManager"/> or a given <see cref="T:NLog.LogFactory"/>.
-            </summary>
-        </member>
-        <member name="M:NLog.LogReceiverService.LogReceiverForwardingService.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:NLog.LogReceiverService.LogReceiverForwardingService"/> class.
-            </summary>
-        </member>
-        <member name="M:NLog.LogReceiverService.LogReceiverForwardingService.#ctor(NLog.LogFactory)">
-            <summary>
-            Initializes a new instance of the <see cref="T:NLog.LogReceiverService.LogReceiverForwardingService"/> class.
-            </summary>
-            <param name="logFactory">The log factory.</param>
-        </member>
-        <member name="M:NLog.LogReceiverService.LogReceiverForwardingService.ProcessLogMessages(NLog.LogReceiverService.NLogEvents)">
-            <summary>
-            Processes the log messages.
-            </summary>
-            <param name="events">The events to process.</param>
-        </member>
-        <member name="M:NLog.LogReceiverService.LogReceiverForwardingService.ProcessLogMessages(NLog.LogEventInfo[])">
-            <summary>
-            Processes the log messages.
-            </summary>
-            <param name="logEvents">The log events.</param>
-        </member>
         <member name="T:NLog.LogReceiverService.LogReceiverServiceConfig">
             <summary>
             Internal configuration of Log Receiver Service contracts.
@@ -9887,6 +9903,40 @@
             </summary>
             <value>The events.</value>
         </member>
+        <member name="T:NLog.LogReceiverService.SoapLogReceiverClient">
+            <summary>
+            Log Receiver Client using legacy SOAP client.
+            </summary>
+        </member>
+        <member name="M:NLog.LogReceiverService.SoapLogReceiverClient.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NLog.LogReceiverService.SoapLogReceiverClient"/> class.
+            </summary>
+            <param name="url">The service URL.</param>
+        </member>
+        <member name="M:NLog.LogReceiverService.SoapLogReceiverClient.ProcessLogMessages(NLog.LogReceiverService.NLogEvents)">
+            <summary>
+            Processes the log messages.
+            </summary>
+            <param name="events">The events.</param>
+        </member>
+        <member name="M:NLog.LogReceiverService.SoapLogReceiverClient.BeginProcessLogMessages(NLog.LogReceiverService.NLogEvents,System.AsyncCallback,System.Object)">
+            <summary>
+            Begins processing of log messages.
+            </summary>
+            <param name="events">The events.</param>
+            <param name="callback">The callback.</param>
+            <param name="asyncState">Asynchronous state.</param>
+            <returns>
+            IAsyncResult value which can be passed to <see cref="M:NLog.LogReceiverService.ILogReceiverClient.EndProcessLogMessages(System.IAsyncResult)"/>.
+            </returns>
+        </member>
+        <member name="M:NLog.LogReceiverService.SoapLogReceiverClient.EndProcessLogMessages(System.IAsyncResult)">
+            <summary>
+            Ends asynchronous processing of log messages.
+            </summary>
+            <param name="result">The result.</param>
+        </member>
         <member name="T:NLog.LogReceiverService.StringCollection">
             <summary>
             List of strings annotated for more terse serialization.
@@ -9895,110 +9945,6 @@
         <member name="M:NLog.LogReceiverService.StringCollection.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:NLog.LogReceiverService.StringCollection"/> class.
-            </summary>
-        </member>
-        <member name="T:NLog.LogReceiverService.WcfLogReceiverClient">
-            <summary>
-            Log Receiver Client using WCF.
-            </summary>
-        </member>
-        <member name="M:NLog.LogReceiverService.WcfLogReceiverClient.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:NLog.LogReceiverService.WcfLogReceiverClient"/> class.
-            </summary>
-        </member>
-        <member name="M:NLog.LogReceiverService.WcfLogReceiverClient.#ctor(System.String)">
-            <summary>
-            Initializes a new instance of the <see cref="T:NLog.LogReceiverService.WcfLogReceiverClient"/> class.
-            </summary>
-            <param name="endpointConfigurationName">Name of the endpoint configuration.</param>
-        </member>
-        <member name="M:NLog.LogReceiverService.WcfLogReceiverClient.#ctor(System.String,System.String)">
-            <summary>
-            Initializes a new instance of the <see cref="T:NLog.LogReceiverService.WcfLogReceiverClient"/> class.
-            </summary>
-            <param name="endpointConfigurationName">Name of the endpoint configuration.</param>
-            <param name="remoteAddress">The remote address.</param>
-        </member>
-        <member name="M:NLog.LogReceiverService.WcfLogReceiverClient.#ctor(System.String,System.ServiceModel.EndpointAddress)">
-            <summary>
-            Initializes a new instance of the <see cref="T:NLog.LogReceiverService.WcfLogReceiverClient"/> class.
-            </summary>
-            <param name="endpointConfigurationName">Name of the endpoint configuration.</param>
-            <param name="remoteAddress">The remote address.</param>
-        </member>
-        <member name="M:NLog.LogReceiverService.WcfLogReceiverClient.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)">
-            <summary>
-            Initializes a new instance of the <see cref="T:NLog.LogReceiverService.WcfLogReceiverClient"/> class.
-            </summary>
-            <param name="binding">The binding.</param>
-            <param name="remoteAddress">The remote address.</param>
-        </member>
-        <member name="M:NLog.LogReceiverService.WcfLogReceiverClient.OpenAsync">
-            <summary>
-            Opens the client asynchronously.
-            </summary>
-        </member>
-        <member name="M:NLog.LogReceiverService.WcfLogReceiverClient.OpenAsync(System.Object)">
-            <summary>
-            Opens the client asynchronously.
-            </summary>
-            <param name="userState">User-specific state.</param>
-        </member>
-        <member name="M:NLog.LogReceiverService.WcfLogReceiverClient.CloseAsync">
-            <summary>
-            Closes the client asynchronously.
-            </summary>
-        </member>
-        <member name="M:NLog.LogReceiverService.WcfLogReceiverClient.CloseAsync(System.Object)">
-            <summary>
-            Closes the client asynchronously.
-            </summary>
-            <param name="userState">User-specific state.</param>
-        </member>
-        <member name="M:NLog.LogReceiverService.WcfLogReceiverClient.ProcessLogMessagesAsync(NLog.LogReceiverService.NLogEvents)">
-            <summary>
-            Processes the log messages asynchronously.
-            </summary>
-            <param name="events">The events to send.</param>
-        </member>
-        <member name="M:NLog.LogReceiverService.WcfLogReceiverClient.ProcessLogMessagesAsync(NLog.LogReceiverService.NLogEvents,System.Object)">
-            <summary>
-            Processes the log messages asynchronously.
-            </summary>
-            <param name="events">The events to send.</param>
-            <param name="userState">User-specific state.</param>
-        </member>
-        <member name="M:NLog.LogReceiverService.WcfLogReceiverClient.NLog#LogReceiverService#ILogReceiverClient#BeginProcessLogMessages(NLog.LogReceiverService.NLogEvents,System.AsyncCallback,System.Object)">
-            <summary>
-            Begins processing of log messages.
-            </summary>
-            <param name="events">The events to send.</param>
-            <param name="callback">The callback.</param>
-            <param name="asyncState">Asynchronous state.</param>
-            <returns>
-            IAsyncResult value which can be passed to <see cref="M:NLog.LogReceiverService.ILogReceiverClient.EndProcessLogMessages(System.IAsyncResult)"/>.
-            </returns>
-        </member>
-        <member name="M:NLog.LogReceiverService.WcfLogReceiverClient.NLog#LogReceiverService#ILogReceiverClient#EndProcessLogMessages(System.IAsyncResult)">
-            <summary>
-            Ends asynchronous processing of log messages.
-            </summary>
-            <param name="result">The result.</param>
-        </member>
-        <member name="E:NLog.LogReceiverService.WcfLogReceiverClient.ProcessLogMessagesCompleted">
-            <summary>
-            Occurs when the log message processing has completed.
-            </summary>
-        </member>
-        <member name="E:NLog.LogReceiverService.WcfLogReceiverClient.OpenCompleted">
-            <summary>
-            Occurs when Open operation has completed.
-            </summary>
-        </member>
-        <member name="E:NLog.LogReceiverService.WcfLogReceiverClient.CloseCompleted">
-            <summary>
-            Occurs when Close operation has completed.
             </summary>
         </member>
         <member name="T:NLog.MappedDiagnosticsContext">
@@ -12154,19 +12100,6 @@
             </summary>
             <value>The endpoint address.</value>
             <docgen category='Connection Options' order='10' />
-        </member>
-        <member name="P:NLog.Targets.LogReceiverWebServiceTarget.EndpointConfigurationName">
-            <summary>
-            Gets or sets the name of the endpoint configuration in WCF configuration file.
-            </summary>
-            <value>The name of the endpoint configuration.</value>
-            <docgen category='Connection Options' order='10' />
-        </member>
-        <member name="P:NLog.Targets.LogReceiverWebServiceTarget.UseBinaryEncoding">
-            <summary>
-            Gets or sets a value indicating whether to use binary message encoding.
-            </summary>
-            <docgen category='Payload Options' order='10' />
         </member>
         <member name="P:NLog.Targets.LogReceiverWebServiceTarget.ClientId">
             <summary>

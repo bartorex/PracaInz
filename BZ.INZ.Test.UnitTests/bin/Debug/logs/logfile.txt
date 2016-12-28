@@ -21,3 +21,4 @@ Type: {
   }
 }
 
+2016-12-28 18:10:11.0817 Autofac.Extras.NLog.SimpleNLogModule+<>c Test

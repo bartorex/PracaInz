@@ -100,8 +100,6 @@ C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infr
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.WebApi\bin\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.WebApi\bin\Castle.Core.xml
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.WebApi\bin\NLog.xml
-C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.WebApi\bin\Autofac.Extras.DynamicProxy.dll
-C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.WebApi\bin\Autofac.Extras.DynamicProxy.xml
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.WebApi\bin\Autofac.Extras.NLog.dll
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.WebApi\bin\BZ.INZ.Integration.SomeExternalSystem.dll
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.WebApi\bin\BZ.INZ.Integration.SomeExternalSystem.pdb
