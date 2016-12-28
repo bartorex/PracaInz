@@ -3,6 +3,7 @@ import { OnInit } from '@angular/core';
 import { JobOffer } from '../../model/job-offer';
 import { JobOfferService } from '../../service/job-offer-service/job-offer.service';
 import { MockedJobOffers } from '../../mocks/mock-job-offer';
+import { Router } from '@angular/router'
 
 @Component({
     selector: 'my-job-offers',
@@ -13,7 +14,8 @@ export class JobOffersComponent implements OnInit {
     public jobOffers: JobOffer[];
 
     constructor(
-        private jobOfferService: JobOfferService
+        private jobOfferService: JobOfferService,
+        private router: Router
     ) { }
 
     getJobsOffers(): void {
@@ -34,6 +36,26 @@ export class JobOffersComponent implements OnInit {
     }
 
     create(jobOffer: JobOffer): void {
+        if (!jobOffer) { return; }
+        this.jobOfferService.createJobOffer(jobOffer)
+            .then(jobOffer => {
+                this.jobOffers.push(jobOffer);
+                this.selectedJobOffer = null;
+            });
+    }
 
+    delete(jobOffer: JobOffer): void {
+        this.jobOfferService.deleteJobOffer(jobOffer.id)
+         .then(() => {
+                this.jobOffers = this.jobOffers.filter(jb => jb !== jobOffer);
+                if (this.selectedJobOffer === jobOffer) {
+                    this.selectedJobOffer = null;
+                }
+            });
+    }
+    
+    gotoDetails(): void {
+        let link = ['/detail', this.selectedJobOffer.id];
+        this.router.navigate(link);
     }
 }

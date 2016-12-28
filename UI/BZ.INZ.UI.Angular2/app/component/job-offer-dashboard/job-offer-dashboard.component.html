@@ -1,0 +1,9 @@
+<h3>Najnowsze oferty</h3>
+<div grid grid-pad>
+    <div *ngFor="let offer of jobOffers" (click)="goToDetail(offer)" class="col-1-4">
+        <div class="module hero">
+            <h4>{{offer.name}}</h4>
+        </div>
+    </div>
+</div>
+<!--<hero-search></hero-search>-->
