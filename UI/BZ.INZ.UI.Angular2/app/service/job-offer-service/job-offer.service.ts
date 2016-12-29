@@ -19,8 +19,6 @@ export class JobOfferService {
         var url = `${this.jobOfferUrl}/getOffers`;
         return this.http.get(url).toPromise()
             .then(resp => {
-                console.log(resp);
-                console.log(resp.json());
                 return resp.json() as JobOffer[]
             })
             .catch(this.errorHandler)
@@ -48,7 +46,7 @@ export class JobOfferService {
         return this.http
             .post(this.createJobOfferCommandUrl, JSON.stringify(command), options)
             .toPromise()
-            .then(response => response.json().data)
+            .then(response => response.json().value)
             .catch(this.errorHandler);
     }
 
