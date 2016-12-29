@@ -7,7 +7,8 @@ import { Router } from '@angular/router'
 
 @Component({
     selector: 'my-job-offers',
-    templateUrl: '../../app/component/job-offers/job-offers.component.html'
+    templateUrl: '../../app/component/job-offers/job-offers.component.html',
+    styleUrls: ['../../app/component/job-offers/job-offers.component.css']
 })
 export class JobOffersComponent implements OnInit {
     public selectedJobOffer: JobOffer;
@@ -28,16 +29,24 @@ export class JobOffersComponent implements OnInit {
 
     ngOnInit(): void {
         this.getJobsOffers();
-        //  this.getMockedJobOffers();
     }
 
     onSelect(jobOffer: JobOffer): void {
         this.selectedJobOffer = jobOffer;
     }
 
-    create(jobOffer: JobOffer): void {
-        if (!jobOffer) { return; }
-        this.jobOfferService.createJobOffer(jobOffer)
+    // create(jobOffer: JobOffer): void {
+    //     if (!jobOffer) { return; }
+    //     this.jobOfferService.createJobOffer(jobOffer)
+    //         .then(jobOffer => {
+    //             this.jobOffers.push(jobOffer);
+    //             this.selectedJobOffer = null;
+    //         });
+    // }
+
+    create(offerName: string): void {
+        if (!offerName) { return; }
+        this.jobOfferService.createJobOfferFromName(offerName)
             .then(jobOffer => {
                 this.jobOffers.push(jobOffer);
                 this.selectedJobOffer = null;

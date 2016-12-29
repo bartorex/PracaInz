@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using Module = BZ.INZ.Application.IoC.Module;
 using LogModule = BZ.INZ.Infrastructure.Logger.IoC.Module;
 using System.Threading;
+using System;
+using Newtonsoft.Json;
 
 namespace BZ.INZ.Test.UnitTests.Application {
     [TestClass]
@@ -36,6 +38,19 @@ namespace BZ.INZ.Test.UnitTests.Application {
             });
             Thread.Sleep(7000);
             Assert.IsNotNull(result);
+        }
+
+        [TestMethod]
+        public async Task ConvertToJson() {
+            var command = new CreateJobOfferCommand {
+                JobOffer = new Domain.Model.Query.Detail.JobOffer {
+                    Content = "asdas",
+                    DateRequested = DateTime.Now,
+                    Name = "Fromtest"
+                }
+            };
+
+            var result = JsonConvert.SerializeObject(command);
         }
     }
 }

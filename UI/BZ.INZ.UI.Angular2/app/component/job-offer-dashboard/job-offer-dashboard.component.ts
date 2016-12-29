@@ -28,11 +28,11 @@ export class JobOffersDashboard implements OnInit {
     }
 
     goToDetail(jobOffer: JobOffer): void {
-        let link = ['/offerDetail', jobOffer.id];
+        let link = ['/offerDetails', jobOffer.id];
         this.router.navigate(link);
     }
 
     ngOnInit(): void {
-        this.getMockedJobOffers();
+        this.getJobOffers();
     }
 }

@@ -1,12 +1,14 @@
 import { Injectable } from '@angular/core';
-import { Http, Headers } from '@angular/http';
+import { Http, Headers, RequestOptions } from '@angular/http';
 import { JobOffer } from '../../model/job-offer';
+import { CreateJobOfferCommand } from '../../model/command/create-job-offer-command';
 import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class JobOfferService {
     // private jobOfferUrl = 'app/jobOffers';
-    private jobOfferUrl = "http://localhost:59920/api/jobOffersQuery"
+    private jobOfferUrl = "http://localhost:59920/api/jobOffersQuery";
+    private createJobOfferCommandUrl = "http://localhost:59920/api/command/CreateJobOffer";
     private headers: Headers;
 
     constructor(private http: Http) {
@@ -29,9 +31,22 @@ export class JobOfferService {
         return this.getJobOffers().then(jobs => jobs.find(x => x.id === id));
     }
 
+    public createJobOfferFromName(offerName: string): Promise<JobOffer> {
+        var jobOffer: JobOffer = { id: "00000000-0000-0000-0000-000000000000", 
+            content: null, 
+            dateRequested: new Date().toDateString(), 
+            employerId: "00000000-0000-0000-0000-000000000000", 
+            name: offerName 
+        };
+        return this.createJobOffer(jobOffer);
+    }
+
     public createJobOffer(jobOffer: JobOffer): Promise<JobOffer> {
+        var command: CreateJobOfferCommand = { jobOffer: jobOffer };
+        let options = new RequestOptions({ headers: this.headers });
+
         return this.http
-            .post(this.jobOfferUrl, JSON.stringify(jobOffer))
+            .post(this.createJobOfferCommandUrl, JSON.stringify(command), options)
             .toPromise()
             .then(response => response.json().data)
             .catch(this.errorHandler);

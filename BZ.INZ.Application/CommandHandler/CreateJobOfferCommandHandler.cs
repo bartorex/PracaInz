@@ -13,7 +13,10 @@ namespace BZ.INZ.Application.CommandHandler {
         }
 
         public async Task<CommandResult<Guid>> Handle(CreateJobOfferCommand command) {
+            command.JobOffer.Id = Guid.NewGuid();
+            command.JobOffer.DateRequested = DateTime.Now;
             var response = await unitOfWork.Add(command.JobOffer);
+            await unitOfWork.SaveChangesAsync();
             return new CommandResult<Guid> { Value = response.Id };
         }
     }

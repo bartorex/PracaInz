@@ -27,7 +27,7 @@ namespace BZ.INZ.Infrastructure.WebApi.Controllers.Query {
         [HttpGet]
         [Route("getOffers")]
         public async Task<IEnumerable<JobOffer>> JobOffers() {
-            return await mockedJobOfferHandler.QueryAsync(new MockedJobOfferKey());
+            return await jobOffesQueryHandler.QueryAsync(new JobOfferKey());
         }
     }
 }

@@ -13,7 +13,7 @@ const appRoutes: Routes = [{
     component: DashboardComponent
 }, {
     path: '',
-    redirectTo: '/dashboard',
+    redirectTo: '/offersDashboard',
     pathMatch: 'full'
 }, {
     path: 'detail/:id',
@@ -22,7 +22,7 @@ const appRoutes: Routes = [{
     path: 'offers',
     component: JobOffersComponent
 }, {
-    path: 'offersdashboard',
+    path: 'offersDashboard',
     component: JobOffersDashboard
 }, {
     path: 'offerDetails/:id',

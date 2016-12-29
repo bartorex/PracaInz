@@ -5,9 +5,9 @@
     <button (click)="create(jobOffer.value); jobOffer.value=''">
         Create
     </button>
-    <ul class="">
+    <ul class="jobOffers">
         <li *ngFor="let jobOffer of jobOffers" (click)="onSelect(jobOffer)">
-            <span>{{jobOffer.dateRequested  | date: 'dd/MM/yyyy'}}</span> {{jobOffer.name}}
+            <span class="badge">{{jobOffer.dateRequested  | date: 'dd/MM/yyyy'}}</span> {{jobOffer.name}}
         </li>
     </ul>
 </div>
