@@ -5,17 +5,15 @@ using BZ.INZ.Domain.Model.Query.Detail;
 using BZ.INZ.Infrastructure.Storage.UnitOfWork;
 
 namespace BZ.INZ.Application.QueryHandler.JobOfferHandler {
-    public class Handler : IQueryHandlerAsync<Key,JobOffer> {
+    public class Handler : IQueryHandlerAsync<JobOfferKey,JobOffer> {
         private readonly IUnitOfWork unitOfWork;
 
         public Handler(IUnitOfWork unitOfWork) {
             this.unitOfWork = unitOfWork;
         }
 
-        public async Task<IQueryable<JobOffer>> QueryAsync(Key request) {
-            return unitOfWork.Query<JobOffer>().
-                GetAwaiter().GetResult()
-                .Where(x => x.DateRequested > request.StartDate && x.DateRequested < request.EndDate);
+        public async Task<IQueryable<JobOffer>> QueryAsync(JobOfferKey request) {
+            return await unitOfWork.Query<JobOffer>();
         }
     }
 }

@@ -12,3 +12,5 @@ C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infr
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\bin\Debug\BZ.INZ.Domain.Model.dll
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\bin\Debug\BZ.INZ.Domain.Model.pdb
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\bin\Debug\Autofac.xml
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\obj\Debug\BZ.INZ.Infrastructure.Storage.Migrations.Initmigration.resources
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Infrastructure.Storage\obj\Debug\BZ.INZ.Infrastructure.Storage.csproj.GenerateResource.Cache

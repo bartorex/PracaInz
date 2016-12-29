@@ -14,7 +14,7 @@ export class JobOfferService {
     }
 
     public getJobOffers(): Promise<JobOffer[]> {
-        var url = `${this.jobOfferUrl}/getMockedJobOffers`;
+        var url = `${this.jobOfferUrl}/getOffers`;
         return this.http.get(url).toPromise()
             .then(resp => {
                 console.log(resp);
@@ -24,9 +24,10 @@ export class JobOfferService {
             .catch(this.errorHandler)
     }
 
-    // public getJobOffer(id: number): Promise<JobOffer> {
-    //     return this.getJobOffers().then(jobs => jobs.find(x => x.id == id));
-    // }
+    public getJobOffer(id: string): Promise<JobOffer> {
+        console.log(id);
+        return this.getJobOffers().then(jobs => jobs.find(x => x.id === id));
+    }
 
     public createJobOffer(jobOffer: JobOffer): Promise<JobOffer> {
         return this.http

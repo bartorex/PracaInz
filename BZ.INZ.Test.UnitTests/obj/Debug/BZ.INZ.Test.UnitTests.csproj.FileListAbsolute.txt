@@ -85,3 +85,6 @@ C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\Autofac.Integration.WebApi.Owin.xml
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\BZ.INZ.Integration.SomeExternalSystem.dll
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\BZ.INZ.Integration.SomeExternalSystem.pdb
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\Microsoft.Owin.Cors.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\System.Web.Cors.dll
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Test.UnitTests\bin\Debug\Microsoft.Owin.Cors.xml

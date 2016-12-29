@@ -7,7 +7,7 @@
     </button>
     <ul class="">
         <li *ngFor="let jobOffer of jobOffers" (click)="onSelect(jobOffer)">
-            <span>{{jobOffer.id}}</span> {{jobOffer.name}}
+            <span>{{jobOffer.dateRequested  | date: 'dd/MM/yyyy'}}</span> {{jobOffer.name}}
         </li>
     </ul>
 </div>
@@ -16,4 +16,5 @@
         Selected Job Offer: {{selectedJobOffer.name}}
     </h3>
     <button (click)="onSelect(null)">Clear</button>
+    <button (click)="gotoDetails()">Details</button>
 </div>

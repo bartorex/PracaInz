@@ -77,9 +77,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueryHandler\ExternalSystemHandler\ExternalSystemQueryHandler.cs" />
     <Compile Include="QueryHandler\JobOfferHandler\Handler.cs" />
-    <Compile Include="QueryHandler\JobOfferHandler\Key.cs" />
+    <Compile Include="QueryHandler\JobOfferHandler\JobOfferKey.cs" />
     <Compile Include="QueryHandler\JobOfferMockedHandler\Handler.cs" />
-    <Compile Include="QueryHandler\JobOfferMockedHandler\Key.cs" />
+    <Compile Include="QueryHandler\JobOfferMockedHandler\MockedJobOfferKey.cs" />
     <Compile Include="QueryHandler\SampleHandler\SampleHandler.cs" />
   </ItemGroup>
   <ItemGroup>
