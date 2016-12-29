@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http, Headers, RequestOptions } from '@angular/http';
 import { JobOffer } from '../../model/job-offer';
 import { CreateJobOfferCommand } from '../../model/command/create-job-offer-command';
+import { DeleteJobOfferCommand } from '../../model/command/delete-job-offer-command';
 import 'rxjs/add/operator/toPromise';
 
 @Injectable()
@@ -9,6 +10,8 @@ export class JobOfferService {
     // private jobOfferUrl = 'app/jobOffers';
     private jobOfferUrl = "http://localhost:59920/api/jobOffersQuery";
     private createJobOfferCommandUrl = "http://localhost:59920/api/command/CreateJobOffer";
+    private updateJobOfferCommandUrl = "http://localhost:59920/api/command/UpdateJobOffer";
+    private deleteJobOfferCommandUrl = "http://localhost:59920/api/command/DeleteJobOffer";
     private headers: Headers;
 
     constructor(private http: Http) {
@@ -30,11 +33,12 @@ export class JobOfferService {
     }
 
     public createJobOfferFromName(offerName: string): Promise<JobOffer> {
-        var jobOffer: JobOffer = { id: "00000000-0000-0000-0000-000000000000", 
-            content: null, 
-            dateRequested: new Date().toDateString(), 
-            employerId: "00000000-0000-0000-0000-000000000000", 
-            name: offerName 
+        var jobOffer: JobOffer = {
+            id: "00000000-0000-0000-0000-000000000000",
+            content: null,
+            dateRequested: new Date().toDateString(),
+            employerId: "00000000-0000-0000-0000-000000000000",
+            name: offerName
         };
         return this.createJobOffer(jobOffer);
     }
@@ -51,18 +55,20 @@ export class JobOfferService {
     }
 
     public updateJobOffer(jobOffer: JobOffer): Promise<JobOffer> {
-        const url = `${this.jobOfferUrl}/${jobOffer.id}`
+        var command: CreateJobOfferCommand = { jobOffer: jobOffer };
+        let options = new RequestOptions({ headers: this.headers });
         return this.http
-            .put(url, JSON.stringify(jobOffer), this.headers)
+            .post(this.updateJobOfferCommandUrl, JSON.stringify(command), options)
             .toPromise()
-            .then(() => jobOffer)
+            .then(response => response.json().value)
             .catch(this.errorHandler);
     }
 
-    public deleteJobOffer(id: number): Promise<void> {
-        const url = `${this.jobOfferUrl}/${id}`
+    public deleteJobOffer(id: string): Promise<void> {
+        var command: DeleteJobOfferCommand = { id: id };
+        let options = new RequestOptions({ headers: this.headers });
         return this.http
-            .delete(url, this.headers)
+            .post(this.deleteJobOfferCommandUrl, JSON.stringify(command) ,options)
             .toPromise()
             .then(() => null)
             .catch(this.errorHandler);

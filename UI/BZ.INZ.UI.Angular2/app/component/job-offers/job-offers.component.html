@@ -1,13 +1,15 @@
-<h2>My JobOffers Detail!</h2>
 <div>
-    <label for="">Job Offers Title</label>
-    <input #jobOffer/>
-    <button (click)="create(jobOffer.value); jobOffer.value=''">
-        Create
-    </button>
+    <div>
+        <label for="">Job Offers Title</label>
+        <input #jobOffer/>
+        <button (click)="create(jobOffer.value); jobOffer.value=''">
+             Create
+         </button>
+    </div>
     <ul class="jobOffers">
         <li *ngFor="let jobOffer of jobOffers" (click)="onSelect(jobOffer)">
             <span class="badge">{{jobOffer.dateRequested  | date: 'dd/MM/yyyy'}}</span> {{jobOffer.name}}
+            <button class="delete" (click)="delete(jobOffer); $event.stopPropagation()">X</button>
         </li>
     </ul>
 </div>

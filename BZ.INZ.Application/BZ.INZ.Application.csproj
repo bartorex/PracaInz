@@ -61,9 +61,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommandHandler\CreateJobOfferCommandHandler.cs" />
+    <Compile Include="CommandHandler\DeleteJobOfferCommandHandler.cs" />
     <Compile Include="CommandHandler\SampleCommandHandler.cs" />
+    <Compile Include="CommandHandler\UpdateJobOfferCommandHandler.cs" />
+    <Compile Include="Command\DeleteJobOfferCommand.cs" />
     <Compile Include="Command\SampleCommand\CreateJobOfferCommand.cs" />
     <Compile Include="Command\SampleCommand\SampleCommand.cs" />
+    <Compile Include="Command\UpdateJobOfferCommand.cs" />
     <Compile Include="Core\Command\CommandResult.cs" />
     <Compile Include="Core\Command\ICommand.cs" />
     <Compile Include="Core\Command\ICommandHandler.cs" />

@@ -53,15 +53,15 @@ export class JobOffersComponent implements OnInit {
             });
     }
 
-    // delete(jobOffer: JobOffer): void {
-    //     this.jobOfferService.deleteJobOffer(jobOffer.id)
-    //         .then(() => {
-    //             this.jobOffers = this.jobOffers.filter(jb => jb !== jobOffer);
-    //             if (this.selectedJobOffer === jobOffer) {
-    //                 this.selectedJobOffer = null;
-    //             }
-    //         });
-    // }
+    delete(jobOffer: JobOffer): void {
+        this.jobOfferService.deleteJobOffer(jobOffer.id)
+            .then(() => {
+                this.jobOffers = this.jobOffers.filter(jb => jb !== jobOffer);
+                if (this.selectedJobOffer === jobOffer) {
+                    this.selectedJobOffer = null;
+                }
+            });
+    }
 
     gotoDetails(): void {
         let link = ['/offerDetails', this.selectedJobOffer.id];
