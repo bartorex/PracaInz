@@ -7,7 +7,6 @@ import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class JobOfferService {
-    // private jobOfferUrl = 'app/jobOffers';
     private jobOfferUrl = "http://localhost:59920/api/jobOffersQuery";
     private createJobOfferCommandUrl = "http://localhost:59920/api/command/CreateJobOffer";
     private updateJobOfferCommandUrl = "http://localhost:59920/api/command/UpdateJobOffer";

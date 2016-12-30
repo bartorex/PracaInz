@@ -17,6 +17,8 @@ import './extensions/rxjs-extensions';
 import { JobOffersComponent } from './component/job-offers/job-offers.component';
 import { JobOffersDashboard } from './component/job-offer-dashboard/job-offer-dashboard.component';
 import { JobOfferService } from './service/job-offer-service/job-offer.service';
+import { ExternalDataService } from './service/external-data-service/external-data.service';
+import { ExternalDataComponent } from './component/external-data/external-data.component';
 
 @NgModule({
     imports: [
@@ -32,11 +34,13 @@ import { JobOfferService } from './service/job-offer-service/job-offer.service';
         DashboardComponent,
         HeroSearchComponent,
         JobOffersComponent,
-        JobOffersDashboard
+        JobOffersDashboard,
+        ExternalDataComponent
     ],
     providers: [
         HeroService,
-        JobOfferService
+        JobOfferService,
+        ExternalDataService
     ],
     bootstrap: [AppComponent]
 })

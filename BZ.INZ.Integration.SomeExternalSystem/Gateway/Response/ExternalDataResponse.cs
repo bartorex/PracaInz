@@ -2,5 +2,6 @@
 
 namespace BZ.INZ.Integration.SomeExternalSystem.Gateway.Response {
     public class ExternalDataResponse : IResponse {
+        public string Data { get; set; }
     }
 }

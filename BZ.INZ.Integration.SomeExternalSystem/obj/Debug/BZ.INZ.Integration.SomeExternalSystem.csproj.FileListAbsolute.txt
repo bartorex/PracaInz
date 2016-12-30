@@ -9,3 +9,4 @@ C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Inte
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Integration.SomeExternalSystem\obj\Debug\BZ.INZ.Integration.SomeExternalSystem.csprojResolveAssemblyReference.cache
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Integration.SomeExternalSystem\obj\Debug\BZ.INZ.Integration.SomeExternalSystem.dll
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Integration.SomeExternalSystem\obj\Debug\BZ.INZ.Integration.SomeExternalSystem.pdb
+C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Integration.SomeExternalSystem\bin\Debug\BZ.INZ.Integration.SomeExternalSystem.dll.config

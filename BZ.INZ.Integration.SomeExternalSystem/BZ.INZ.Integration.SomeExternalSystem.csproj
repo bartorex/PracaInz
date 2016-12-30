@@ -36,6 +36,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,10 +52,25 @@
     <Compile Include="Gateway\Response\ExternalDataResponse.cs" />
     <Compile Include="IoC\Module.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ExternalService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="Service References\ExternalService\HelloService.wsdl" />
+    <None Include="Service References\ExternalService\HelloService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ExternalService\HelloService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BZ.INZ.Domain.Model\BZ.INZ.Domain.Model.csproj">
@@ -64,6 +81,24 @@
       <Project>{5487157e-ef1d-4321-b542-4d5cd194b7c2}</Project>
       <Name>BZ.INZ.Integration.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ExternalService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExternalService\HelloService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExternalService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExternalService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExternalService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

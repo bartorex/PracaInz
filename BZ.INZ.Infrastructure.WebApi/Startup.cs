@@ -52,6 +52,7 @@ namespace BZ.INZ.Infrastructure.WebApi {
             builder.RegisterModule<Integration.DocuSign.IoC.Module>();
             builder.RegisterModule<Storage.IoC.Module>();
             builder.RegisterModule<Application.IoC.Module>();
+            builder.RegisterModule<Integration.SomeExternalSystem.IoC.Module>();
             //builder.RegisterModule<Logger.IoC.Module>();
             //builder.RegisterModule<NLogModule>();
             //builder.RegisterModule<SimpleNLogModule>();

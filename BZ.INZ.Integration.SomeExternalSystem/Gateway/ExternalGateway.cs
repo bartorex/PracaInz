@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 
 namespace BZ.INZ.Integration.SomeExternalSystem.Gateway {
     public class ExternalGateway : IGateway<ExternalDataRequest, ExternalDataResponse> {
-        private readonly Client.Client client;
+        private readonly ExternalService.IHelloService helloService;
 
-        public ExternalGateway(Client.Client client) {
-            this.client = client;
+        public ExternalGateway() {
+            helloService = new ExternalService.HelloServiceClient();
         }
 
         public async Task<ExternalDataResponse> CallAsync(ExternalDataRequest request) {
-            client.Connect();
-            var response = client.GetData(request);
             return await Task.Run(() => {
-                return response;
+                var response = helloService.ExtarnalSystemFunction(request.Data);
+                return new ExternalDataResponse {
+                    Data = response
+                };
             });
         }
     }

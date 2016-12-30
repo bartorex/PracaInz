@@ -35,8 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac, Version=4.1.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <HintPath>..\packages\Autofac.4.1.1\lib\net45\Autofac.dll</HintPath>
+    <Reference Include="Autofac, Version=4.2.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.2.1\lib\net45\Autofac.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Autofac.Extras.NLog, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -88,6 +88,7 @@
     <Compile Include="Infrastructure\LoggerTest.cs" />
     <Compile Include="Infrastructure\StorageTest.cs" />
     <Compile Include="Integration\DocuSign.cs" />
+    <Compile Include="Integration\ExternalSystem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -118,6 +119,10 @@
     <ProjectReference Include="..\BZ.INZ.Integration.DocuSign\BZ.INZ.Integration.DocuSign.csproj">
       <Project>{ff86dae8-083a-4808-b98d-390cf56a6496}</Project>
       <Name>BZ.INZ.Integration.DocuSign</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BZ.INZ.Integration.SomeExternalSystem\BZ.INZ.Integration.SomeExternalSystem.csproj">
+      <Project>{4165B06E-C5DF-4A34-8A3E-7FC39E57F712}</Project>
+      <Name>BZ.INZ.Integration.SomeExternalSystem</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

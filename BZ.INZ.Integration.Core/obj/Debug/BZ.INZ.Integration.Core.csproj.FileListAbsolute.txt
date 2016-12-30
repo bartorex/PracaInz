@@ -1,4 +1,3 @@
-C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Integration.Core\obj\Debug\BZ.INZ.Integration.Core.csprojResolveAssemblyReference.cache
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Integration.Core\bin\Debug\BZ.INZ.Integration.Core.dll
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Integration.Core\bin\Debug\BZ.INZ.Integration.Core.pdb
 C:\Users\barto\onedrive\dokumenty\visual studio 2015\Projects\BZ.INZ\BZ.INZ.Integration.Core\obj\Debug\BZ.INZ.Integration.Core.dll
